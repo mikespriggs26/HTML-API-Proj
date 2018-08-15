@@ -1,6 +1,6 @@
-﻿const app = document.getElementById('root');
+﻿    const app = document.getElementById('root');
 
-const logo = document.createElement('img');
+//const logo = document.createElement('img');
 //logo.src = 'logo.png';
 
 const container = document.createElement('div');
@@ -13,7 +13,7 @@ var request = new XMLHttpRequest();
 request.open('GET', 'https://api.iextrading.com/1.0/stock/aapl/company', true);
 
 //request.open('GET', 'https://ghibliapi.herokuapp.com/films', true);
-request.onload = function () {
+request.onclick = function myFunction() {
 
     // Begin accessing JSON data here
     var data = JSON.parse(this.response);
