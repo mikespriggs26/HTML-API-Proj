@@ -1,15 +1,24 @@
-﻿function UserAction() {
+﻿//function UserAction() {
+//    var xhttp = new XMLHttpRequest();
+//    xhttp.onreadystatechange = function () {
+//        if (this.readyState == 4 && this.status == 200)
+//    };
+//    xhttp.open("POST", "https://api.iextrading.com/1.0/stock/aapl/company", true);
+//    xhttp.setRequestHeader("Content-type", "application/json");
+//    xhttp.send("Your JSON Data Here");
+//}
+function myFunction() {
     var xhttp = new XMLHttpRequest();
+    var text = document.getElementById('id1').value;
     xhttp.onreadystatechange = function () {
         if (this.readyState == 4 && this.status == 200) {
-            alert(this.responseText);
+            document.getElementById("demo").innerHTML = this.responseText;
+        
         }
     };
-    xhttp.open("POST", "https://api.iextrading.com/1.0/stock/aapl/company", true);
-    xhttp.setRequestHeader("Content-type", "application/json");
-    xhttp.send("Your JSON Data Here");
+    xhttp.open("GET", "https://api.iextrading.com/1.0/stock/aapl/company", true);
+    xhttp.send();
 }
-
 
 
 //    const app = document.getElementById('root');
