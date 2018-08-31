@@ -15,8 +15,9 @@ function myFunction() {
     var url = "https://api.iextrading.com/1.0/stock/aapl/company";
     xhttp.onreadystatechange = function () {
         if (this.readyState == 4 && this.status == 200) {
-            document.getElementById("demo").innerHTML = this.responseText;
-        
+            document.getElementById("demo").innerHTML = "You've selected: " + symbol + " \n " + this.responseText;// \n not working!!!!!!!!!!!!
+            //document.getElementById("demo").innerHTML = symbol + "asdf";
+
         }
     };
     xhttp.open("GET", url, true);
