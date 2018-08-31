@@ -12,15 +12,18 @@ function myFunction() {
     var symbol = document.getElementById('id1').value;
     //var API_Path = "https://api.iextrading.com/1.0/stock/{0}/company";
     //API_Path = string.Format(API_Path, symbol);
-    var url = "https://api.iextrading.com/1.0/stock/aapl/company";
+    var urlPrefix = "https://api.iextrading.com/1.0/stock/";
+    var url2 = symbol + "/company";
+    var urlWhole = urlPrefix + url2;
+
     xhttp.onreadystatechange = function () {
         if (this.readyState == 4 && this.status == 200) {
-            document.getElementById("demo").innerHTML = "You've selected: " + symbol + " \n " + this.responseText;// \n not working!!!!!!!!!!!!
-            //document.getElementById("demo").innerHTML = symbol + "asdf";
+            document.getElementById("ticker").innerHTML = "You've selected: " + symbol;
+            document.getElementById("info").innerHTML = this.responseText;
 
         }
     };
-    xhttp.open("GET", url, true);
+    xhttp.open("GET", urlWhole, true);
     xhttp.send();
 }
 
