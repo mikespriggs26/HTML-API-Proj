@@ -18,8 +18,10 @@ function myFunction() {
 
     xhttp.onreadystatechange = function () {
         if (this.readyState == 4 && this.status == 200) {
+            var obj = JSON.parse(this.responseText)
             document.getElementById("ticker").innerHTML = "You've selected: " + symbol;
-            document.getElementById("info").innerHTML = this.responseText;
+            //document.getElementById("info").innerHTML = this.responseText;  //prints raw JSON data
+            document.getElementById("info").innerHTML = obj.companyName;//works
 
         }
     };
