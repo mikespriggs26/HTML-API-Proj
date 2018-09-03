@@ -10,18 +10,18 @@
 function myFunction() {
     var xhttp = new XMLHttpRequest();
     var symbol = document.getElementById('id1').value;
-    //var API_Path = "https://api.iextrading.com/1.0/stock/{0}/company";
+    //var API_Path = "https://api.iextrading.com/1.0/stock/{0}/stats";
     //API_Path = string.Format(API_Path, symbol);
     var urlPrefix = "https://api.iextrading.com/1.0/stock/";
-    var url2 = symbol + "/company";
+    var url2 = symbol + "/quote";
     var urlWhole = urlPrefix + url2;
 
     xhttp.onreadystatechange = function () {
         if (this.readyState == 4 && this.status == 200) {
             var obj = JSON.parse(this.responseText)
-            document.getElementById("ticker").innerHTML = "You've selected: " + symbol;
+            document.getElementById("ticker").innerHTML = "You've selected:    " + obj.companyName;
             //document.getElementById("info").innerHTML = this.responseText;  //prints raw JSON data
-            document.getElementById("info").innerHTML = obj.companyName;//works
+            document.getElementById("info").innerHTML = "PE Ratio:     " + obj.peRatio;//works
 
         }
     };
