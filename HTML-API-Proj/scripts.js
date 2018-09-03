@@ -19,9 +19,11 @@ function myFunction() {
     xhttp.onreadystatechange = function () {
         if (this.readyState == 4 && this.status == 200) {
             var obj = JSON.parse(this.responseText)
-            document.getElementById("ticker").innerHTML = "You've selected:    " + obj.companyName;
+            document.getElementById("company").innerHTML = "You've selected: <br />  " + obj.companyName;
             //document.getElementById("info").innerHTML = this.responseText;  //prints raw JSON data
-            document.getElementById("info").innerHTML = "PE Ratio:     " + obj.peRatio;//works
+            document.getElementById("peRatio").innerHTML = "PE Ratio:     " + obj.peRatio;//works
+            document.getElementById("latestPrice").innerHTML = "Price:     " + obj.latestPrice;
+            document.getElementById("ytdChange").innerHTML = "YTD:     " + obj.ytdChange;
 
         }
     };
