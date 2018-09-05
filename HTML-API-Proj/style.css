@@ -15,8 +15,12 @@ html {
 #root {
     max-width: 1200px;
     margin: 0 auto;
+    font-size: 40px;
 }
-
+#id1{
+    height:30px;
+    width:20%;
+}
 h1 {
     text-align: center;
     padding: 1.5rem 2.5rem;
@@ -38,7 +42,8 @@ p {
     
 }
 #company{
-    font-weight: bold;
+    
+    font-size: 30px;
 }
 
 .container {
