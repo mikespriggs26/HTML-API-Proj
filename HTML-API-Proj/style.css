@@ -45,6 +45,15 @@ p {
     
     font-size: 30px;
 }
+#peRatio{
+    font-size: 25px;
+}
+#latestPrice{
+    font-size: 25px;
+}
+#ytdChange{
+    font-size: 25px;
+}
 
 .container {
     display: flex;
