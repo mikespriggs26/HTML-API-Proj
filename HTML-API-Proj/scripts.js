@@ -21,7 +21,7 @@ function myFunction() {
             var obj = JSON.parse(this.responseText)
             document.getElementById("company").innerHTML = "You've selected: <br />  " + obj.companyName;
             //document.getElementById("info").innerHTML = this.responseText;  //prints raw JSON data
-            document.getElementById("peRatio").innerHTML = "PE Ratio:   \t  " + obj.peRatio;//works
+            document.getElementById("peRatio").innerHTML = "PE Ratio:     " + obj.peRatio;//works
             document.getElementById("latestPrice").innerHTML = "Price:     " + obj.latestPrice;
             document.getElementById("ytdChange").innerHTML = "YTD:     " + obj.ytdChange;
 
