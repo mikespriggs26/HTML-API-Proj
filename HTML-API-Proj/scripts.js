@@ -1,12 +1,4 @@
-﻿//function UserAction() {
-//    var xhttp = new XMLHttpRequest();
-//    xhttp.onreadystatechange = function () {
-//        if (this.readyState == 4 && this.status == 200)
-//    };
-//    xhttp.open("POST", "https://api.iextrading.com/1.0/stock/aapl/company", true);
-//    xhttp.setRequestHeader("Content-type", "application/json");
-//    xhttp.send("Your JSON Data Here");
-//}
+﻿
 function myFunction() {
     var xhttp = new XMLHttpRequest();
     var symbol = document.getElementById('id1').value;
@@ -19,11 +11,12 @@ function myFunction() {
     xhttp.onreadystatechange = function () {
         if (this.readyState == 4 && this.status == 200) {
             var obj = JSON.parse(this.responseText)
-            document.getElementById("company").innerHTML = "You've selected: <br />  " + obj.companyName;
+            document.getElementById("company").innerHTML = obj.companyName;
             //document.getElementById("info").innerHTML = this.responseText;  //prints raw JSON data
-            document.getElementById("peRatio").innerHTML = "PE Ratio:     " + obj.peRatio;//works
-            document.getElementById("latestPrice").innerHTML = "Price:     " + obj.latestPrice;
-            document.getElementById("ytdChange").innerHTML = "YTD:     " + obj.ytdChange;
+            document.getElementById("sector").innerHTML = "Sector: " + obj.sector;
+            document.getElementById("peRatio").innerHTML = "PE Ratio: " + obj.peRatio;
+            document.getElementById("latestPrice").innerHTML = "Price: " + obj.latestPrice;
+            document.getElementById("ytdChange").innerHTML = "YTD: " + obj.ytdChange;
 
         }
     };
