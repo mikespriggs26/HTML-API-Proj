@@ -15,6 +15,11 @@ function myFunction() {
             //document.getElementById("info").innerHTML = this.responseText;  //prints raw JSON data
             document.getElementById("sector").innerHTML = "Sector: " + obj.sector;
             document.getElementById("peRatio").innerHTML = "PE Ratio: " + obj.peRatio;
+            var peRatioNum = Number(obj.peRatio);
+            if (peRatioNum > 20) {
+                //document.getElementByClassName("color-box").style.backgroundColor = '#008000';
+                document.getElementsByClassName.innerHTML = peRatioNum;
+            }
             document.getElementById("latestPrice").innerHTML = "Price: " + obj.latestPrice;
             document.getElementById("ytdChange").innerHTML = "YTD: " + obj.ytdChange;
 
