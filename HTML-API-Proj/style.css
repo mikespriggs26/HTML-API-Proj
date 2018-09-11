@@ -42,7 +42,7 @@ p {
     margin: 0;
     
 }
-.color-box {
+#color-box {
     /*width: 10px;
     height: 10px;
     display: inline-block;
@@ -51,6 +51,7 @@ p {
     left: 5px;
     top: 5px;*/
     font-size: 25px;
+    
 }
 #company{
     
