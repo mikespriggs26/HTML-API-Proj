@@ -16,13 +16,15 @@ function myFunction() {
             document.getElementById("sector").innerHTML = "Sector: " + obj.sector;
             document.getElementById("peRatio").innerHTML = "PE Ratio: " + obj.peRatio;
             var peRatioNum = parseInt(document.getElementById("peRatio").value);//not working
-            if (peRatioNum < 20) {
-                //document.getElementById("color-box").style.backgroundColor = '#008000';
-                document.getElementsById("color-box").innerHTML = "test";
+            var text = "tst";
+            if (obj.peRatio < 20) {
+                document.getElementById("color-box").style.backgroundColor = '#008000';
+                text = "test";
             }
+            document.getElementById("color-box").innerHTML = text;
             document.getElementById("latestPrice").innerHTML = "Price: " + obj.latestPrice;
             document.getElementById("ytdChange").innerHTML = "YTD: " + obj.ytdChange;
-
+           
         }
     };
     xhttp.open("GET", urlWhole, true);
