@@ -15,11 +15,11 @@ function myFunction() {
             //document.getElementById("info").innerHTML = this.responseText;  //prints raw JSON data
             document.getElementById("sector").innerHTML = "Sector: " + obj.sector;
             document.getElementById("peRatio").innerHTML = "PE Ratio: " + obj.peRatio;
-            var peRatioNum = parseInt(document.getElementById("peRatio").value);//not working
-            var text = "tst";
+            //var peRatioNum = parseInt(document.getElementById("peRatio").value);//not working
+            var text = "PE Blue";
             if (obj.peRatio < 20) {
-                document.getElementById("color-box").style.backgroundColor = '#008000';
-                text = "test";
+                document.getElementById("peRatio").style.backgroundColor = '#008000';
+                text = "PE Green";
             }
             document.getElementById("color-box").innerHTML = text;
             document.getElementById("latestPrice").innerHTML = "Price: " + obj.latestPrice;
