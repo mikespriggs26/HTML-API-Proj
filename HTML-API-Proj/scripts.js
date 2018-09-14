@@ -23,7 +23,7 @@ function myFunction() {
             }
             document.getElementById("color-box").innerHTML = text;
             document.getElementById("latestPrice").innerHTML = "Price: " + obj.latestPrice;
-            document.getElementById("ytdChange").innerHTML = "YTD: " + obj.ytdChange;
+            document.getElementById("week52High").innerHTML = "52 Week High: " + obj.week52High;
            
         }
     };
