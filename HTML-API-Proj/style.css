@@ -72,6 +72,9 @@ p {
 #marketCap{
     font-size: 25px;
 }
+#avgTotalVolume{
+    font-size: 25px;
+}
 
 .container {
     display: flex;
