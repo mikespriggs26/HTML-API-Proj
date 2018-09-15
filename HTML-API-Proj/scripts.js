@@ -16,14 +16,15 @@ function myFunction() {
             document.getElementById("sector").innerHTML = "Sector: " + obj.sector;
             document.getElementById("peRatio").innerHTML = "PE Ratio: " + obj.peRatio;
             //var peRatioNum = parseInt(document.getElementById("peRatio").value);//not working
-            var text = "PE Blue";
+            //var text = "PE Blue";
             if (obj.peRatio < 20) {
                 document.getElementById("peRatio").style.backgroundColor = '#008000';
                 text = "PE Green";
             }
-            document.getElementById("color-box").innerHTML = text;
+            //document.getElementById("color-box").innerHTML = text;
             document.getElementById("latestPrice").innerHTML = "Price: " + obj.latestPrice;
             document.getElementById("week52High").innerHTML = "52 Week High: " + obj.week52High;
+            document.getElementById("marketCap").innerHTML = "Market Cap: " + obj.marketCap;
            
         }
     };
