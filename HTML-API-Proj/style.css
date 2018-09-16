@@ -66,6 +66,9 @@ p {
 #latestPrice{
     font-size: 25px;
 }
+#latestSource{
+    font-size: 25px;
+}
 #week52High{
     font-size: 25px;
 }
