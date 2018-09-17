@@ -22,8 +22,7 @@ function myFunction() {
                 text = "PE Green";
             }
             //document.getElementById("color-box").innerHTML = text;
-            document.getElementById("latestPrice").innerHTML = "Price: " + obj.latestPrice;
-            document.getElementById("latestSource").innerHTML = "Source: " + obj.latestSource;
+            document.getElementById("latestPrice").innerHTML = "Price: " + obj.latestPrice + "  " + obj.latestSource;
             document.getElementById("week52High").innerHTML = "52 Week High: " + obj.week52High;
             document.getElementById("marketCap").innerHTML = "Market Cap: $" + obj.marketCap;
             document.getElementById("avgTotalVolume").innerHTML = "Average Total Volume: " + obj.avgTotalVolume;
