@@ -25,7 +25,7 @@ function myFunction() {
             document.getElementById("latestPrice").innerHTML = "Price: " + obj.latestPrice + "  " + obj.latestSource;
             document.getElementById("week52High").innerHTML = "52 Week High: " + obj.week52High;
             document.getElementById("marketCap").innerHTML = "Market Cap: $" + obj.marketCap;
-            document.getElementById("avgTotalVolume").innerHTML = "Average Total Volume: " + obj.avgTotalVolume;
+            document.getElementById("avgTotalVolume").innerHTML = "Average Volume: " + obj.avgTotalVolume;
         }
     };
     xhttp.open("GET", urlWhole, true);
