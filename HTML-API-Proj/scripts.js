@@ -17,15 +17,23 @@ function myFunction() {
             //var peRatioNum = parseInt(document.getElementById("peRatio").value);//not working
             if (obj.peRatio < 20) {
                 document.getElementById("peRatio").style.backgroundColor = '#008000';
-                text = "PE Green";
             }
-            document.getElementById("latestPrice").innerHTML = "Price: " + obj.latestPrice + "  " + obj.latestSource;
-            document.getElementById("week52High").innerHTML = "52 Week High: " + obj.week52High;
+            else {
+                document.getElementById("peRatio").style.backgroundColor = '#FF0000';
+
+            }
             if (obj.marketCap > 2000000) {
                 document.getElementById("marketCap").style.backgroundColor = '#008000';
             }
-            document.getElementById("marketCap").innerHTML = "Market Cap: $" + obj.marketCap;
+            if (obj.avgTotalVolume > 1000000) {
+                document.getElementById("avgTotalVolume").style.backgroundColor = '#008000';
+            }
             document.getElementById("avgTotalVolume").innerHTML = "Average Volume: " + obj.avgTotalVolume;
+
+            document.getElementById("marketCap").innerHTML = "Market Cap: $" + obj.marketCap;
+            document.getElementById("latestPrice").innerHTML = "Price: " + obj.latestPrice + "  " + obj.latestSource;
+            document.getElementById("week52High").innerHTML = "52 Week High: " + obj.week52High;
+            
         }
     };
     xhttp.open("GET", urlWhole, true);
