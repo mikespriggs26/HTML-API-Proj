@@ -76,6 +76,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="index.html" />
+    <Content Include="MetricsParameters.html" />
     <Content Include="scripts.js" />
     <Content Include="style.css" />
     <Content Include="Web.config" />
