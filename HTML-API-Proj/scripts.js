@@ -22,10 +22,10 @@ function myFunction() {
                 document.getElementById("peRatio").style.backgroundColor = '#FF0000';
 
             }
-            if (obj.marketCap > 2000000) {
+            if (obj.marketCap > 2000000000) {
                 document.getElementById("marketCap").style.backgroundColor = '#008000';
             }
-            if (obj.avgTotalVolume > 1000000) {
+            if (obj.avgTotalVolume > 100000) {
                 document.getElementById("avgTotalVolume").style.backgroundColor = '#008000';
             }
             document.getElementById("avgTotalVolume").innerHTML = "Average Volume: " + obj.avgTotalVolume;
