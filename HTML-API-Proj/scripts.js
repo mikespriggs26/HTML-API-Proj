@@ -15,8 +15,11 @@ function myFunction() {
             document.getElementById("sector").innerHTML = "Sector: " + obj.sector;
             document.getElementById("peRatio").innerHTML = "PE Ratio: " + obj.peRatio;
             //var peRatioNum = parseInt(document.getElementById("peRatio").value);//not working
-            if (obj.peRatio < 20) {
-                document.getElementById("peRatio").style.backgroundColor = '#008000';
+            if (obj.peRatio < 20 && obj.peRatio >= 15) {
+                document.getElementById("peRatio").style.backgroundColor = '#66ff33';
+            }
+            else if (obj.peRatio < 15) {
+                document.getElementById("peRatio").style.backgroundColor = '#008000'
             }
             else {
                 document.getElementById("peRatio").style.backgroundColor = '#FF0000';
