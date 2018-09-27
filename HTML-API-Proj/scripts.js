@@ -1,4 +1,10 @@
 ﻿
+    function tickerPopup() {
+        alert("I am an alert box!");
+    }
+        
+
+
 function myFunction() {
     var xhttp = new XMLHttpRequest();
     var symbol = document.getElementById('id1').value;
