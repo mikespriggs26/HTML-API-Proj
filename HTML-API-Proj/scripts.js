@@ -1,6 +1,6 @@
 ﻿
     function tickerPopup() {
-        alert("I am an alert box!");
+        alert("Microsoft  MSFT\nApple AAPL\nFacebook FB\nAmazon AMZN");
     }
         
 
