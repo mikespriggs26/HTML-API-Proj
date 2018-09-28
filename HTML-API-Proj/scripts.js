@@ -1,6 +1,6 @@
 ﻿
     function tickerPopup() {
-        alert("Microsoft  MSFT\nApple AAPL\nFacebook FB\nAmazon AMZN");
+        alert("Microsoft   MSFT\nApple        AAPL\nFacebook   FB\nAmazon     AMZN");
     }
         
 
@@ -17,10 +17,8 @@ function myFunction() {
         if (this.readyState == 4 && this.status == 200) {
             var obj = JSON.parse(this.responseText)
             document.getElementById("company").innerHTML = obj.companyName;
-            //document.getElementById("info").innerHTML = this.responseText;  //prints raw JSON data
             document.getElementById("sector").innerHTML = "Sector: " + obj.sector;
             document.getElementById("peRatio").innerHTML = "PE Ratio: " + obj.peRatio;
-            //var peRatioNum = parseInt(document.getElementById("peRatio").value);//not working
             if (obj.peRatio < 20 && obj.peRatio >= 15) {
                 document.getElementById("peRatio").style.backgroundColor = '#66ff33';
             }
