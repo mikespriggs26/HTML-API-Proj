@@ -60,13 +60,15 @@ p {
 }
 #week52High{
     font-size: 25px;
-    padding-bottom: 70px;
 }
 #marketCap{
     font-size: 25px;
 }
 #avgTotalVolume{
     font-size: 25px;
+}
+#colors{
+    padding-bottom:35px;
 }
 footer{
     padding-top: 50px;
